@@ -1,0 +1,195 @@
+#header, #debitORcreditTitle, #paymentForm, #SuccessTitle, p, a{ 
+    font-family: Tahoma;   
+}
+#header{
+    background-color: pink;
+    color: white;
+    height: 60px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#logo img{
+    width: 100px;
+    height: 100px;
+}
+
+#navigation {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    border: 1px solid pink;
+    display: inline;
+    color: white;
+    margin-right: 20px;
+
+}
+
+#searchbar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;   
+}
+
+#searchBarbox, #searchBtn, #payNowbtn {   
+    background-color: pink;
+    border-color: white; 
+    color: white;
+}
+
+#searchBarbox {
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#searchBarbox::placeholder {
+    color: white; 
+}
+
+#searchBtn, #payNowbtn {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.topRow, .bottomRow {
+    margin-top: 5%;
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;   
+    border: 10px solid pink;
+}
+
+.book {
+    display: flex;
+    width: 45%;
+}
+
+.cover img {
+    width: 300px;
+    height: 300px;
+}
+
+.blurb {
+    margin-left: 15px;
+}
+#moreDescription1, #moreDescription2, #moreDescription3, #moreDescription4 {
+    display: none;
+}
+#readMorebtn1, #readMorebtn2, #readMorebtn3, #readMorebtn4 {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: pink;
+    color: white;
+
+}
+
+.blurb a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: pink;
+    color: white;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#debitORcreditTitle, #SuccessTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#debitORcreditTitle img, #SuccessTitle img {
+   width: 50px;
+   height: 50px;
+   margin-left: 10px;
+}
+
+#paymentForm {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+}
+
+#master_card,  #cvv_code {
+background-color: white;
+color: black;
+}
+
+
+
+@media (max-width: 500px) {
+     #header {
+        flex-direction: column;      
+        height: auto;                
+        padding: 15px;
+    }
+
+    #navigation {
+        margin: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #searchbar {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #searchbar input {
+        width: 80%;                  
+    }
+    .topRow, .bottomRow {
+        flex-direction: column;   
+        align-items: center;      
+    }
+
+    .book {
+        width: 90%;               
+        flex-direction: column;   
+        text-align: center;
+    }
+
+    .blurb {
+        margin-left: 0;           
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .cover img {
+        width: 250px;            
+        height: auto;
+    }
+    
+    #debitORcreditTitle, #SuccessTitle {
+        flex-direction: column;   
+    }
+
+    #paymentForm {
+        flex-direction: column;   
+        width: 90%;               
+    }
+
+    #successMessage, #backToHome {
+        text-align: center;      
+    }
+
+}

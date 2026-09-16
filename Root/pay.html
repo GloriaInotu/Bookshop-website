@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/pay.js" defer></script>
+        <title>Process Payment</title>
+    </head>
+    <body>
+        <div id="header">
+             <div id="logo">
+                <img src="../Image/logo.png" alt="Bookshop Logo" />   
+            </div>
+
+            <div id="title">
+                <h2>Gloria's Bookshop</h2>
+            </div>
+            
+            <nav id="navigation">
+                <a href="../Root/index.html" title="Link in navigation bar to get to the home page">Home</a>
+                <a href="#" title="Link in navigation bar to get to the about us page">About Us</a>
+                <a href="#" title="Link in navigation bar to get to the contact us page">Contact Us</a>
+            </nav>
+        </div>
+
+        <div id="debitORcreditTitle">
+                <h2>Debit/ Credit card </h2>
+                <img src="../Image/credit-card.png" alt ="Credit/Debit Card Image"> 
+        </div>
+
+        <div id="paymentForm">
+            <form>
+                <label for="cardNumber">Card Number:</label>
+                <input type="number" id="masterCard" name="masterCard" placeholder="1234 5678 9012 3456"  maxlength="16"> <br><br>
+
+                <label for="expiryDate">Expiry Date:</label>
+                <select id="expMonth" name="expMonth">
+                    <option value="M">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>       
+                    <option value="07">07</option>
+                    <option value="08">08</option> 
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select id="expYear" name="expYear">
+                    <option value="Y">Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>       
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                </select>
+                <br><br>
+
+                <label for="cvv">CVV:</label>
+                <input type="number" id="CVV" name="CVV" placeholder="123" maxlength="4"><br><br> 
+
+                <input type="submit" id="payNowbtn" value="Pay Now">
+            </form>
+        </div>
+    </body>
+</html> 
